@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackShade_1"
+    tools:context=".AddEditNoteActivity">
+
+    <EditText
+        android:id="@+id/etNoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter the Note Title"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etNoteDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Enter Note Description"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:layout_above="@+id/btnAddUpdate"
+        android:layout_below="@+id/etNoteTitle"
+        android:textSize="18dp"
+        android:singleLine="false"/>
+
+    <Button
+        android:id="@+id/btnAddUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custum_btn_bg"
+        android:gravity="center"
+        android:text="Button"
+        android:layout_margin="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+</RelativeLayout>
